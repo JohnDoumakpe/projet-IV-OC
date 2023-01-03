@@ -1,0 +1,22 @@
+@mixin btn {
+    margin: 10px 0px;
+    padding: 10px 10px;
+    background-color: $colour-white;
+    border-style:solid;
+    border-radius: 25px;
+    //border-color: ;
+    color: $colour-black;
+    border-width: 2px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+@mixin section-display1{
+    display:flex;
+    flex-direction:column;
+}
+
+@mixin section-display2{
+    display:flex;
+    flex-direction:row;
+}

@@ -1,0 +1,35 @@
+header, main, footer, .container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "roboto";
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "shrikhand";
+}
+
+.btn {
+  margin: 10px 0px;
+  padding: 10px 10px;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-radius: 25px;
+  color: #000000;
+  border-width: 2px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.header {
+  width: 100%;
+  background: #FFFFFF;
+}
+.header__img {
+  width: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */
