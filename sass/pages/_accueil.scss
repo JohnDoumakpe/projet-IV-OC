@@ -46,9 +46,20 @@
     }
     .btn-fonctionnement{
         color:$color-black;
+        transition: all 450ms;
+        &:hover {
+            cursor: pointer;
+            background-color:$color-primary2;
+            opacity:1;
+            .fa-mobile-alt:before, .fa-mobile-screen-button:before, .fa-list-dots:before, .fa-list-ul:before,.fa-store:before{
+            color:$color-primary;
+            
+            }     
+        }
        
-        
     }
+        
+    
     .fa-mobile-alt:before, .fa-mobile-screen-button:before{
         color:$color-grey-icone;
         margin-left: -43px;
@@ -91,6 +102,14 @@
         a{
             text-decoration:none;
             color:$color-black;
+            &:hover {
+                .fa-heart:before {
+                    font-weight:bolder;
+                    color:$color-primary;
+                    cursor: pointer;
+                    transition: color 450ms ease-out;
+                }
+            }   
         }
         img{
             width:100%;
@@ -107,6 +126,7 @@
                 font-size : 35px;
                 position: absolute;
                 margin-left: -25px;
+                 
             }
             p{
                 margin-top: 5px;
@@ -149,7 +169,7 @@ footer{
             color:$color-white;
             .fa-cutlery:before, .fa-utensils:before{
             margin-right: 15px;
-            }
+        }
             .fa-hands-helping:before, .fa-handshake-angle:before {
                 margin-right: 9px;
             }

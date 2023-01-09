@@ -99,6 +99,15 @@ header img {
 }
 .sectionTwo .btn-fonctionnement {
   color: #000000;
+  transition: all 450ms;
+}
+.sectionTwo .btn-fonctionnement:hover {
+  cursor: pointer;
+  background-color: #F5EDFF;
+  opacity: 1;
+}
+.sectionTwo .btn-fonctionnement:hover .fa-mobile-alt:before, .sectionTwo .btn-fonctionnement:hover .fa-mobile-screen-button:before, .sectionTwo .btn-fonctionnement:hover .fa-list-dots:before, .sectionTwo .btn-fonctionnement:hover .fa-list-ul:before, .sectionTwo .btn-fonctionnement:hover .fa-store:before {
+  color: #9356DC;
 }
 .sectionTwo .fa-mobile-alt:before, .sectionTwo .fa-mobile-screen-button:before {
   color: #7E7E7E;
@@ -141,6 +150,12 @@ header img {
 .sectionThree .cardOne a {
   text-decoration: none;
   color: #000000;
+}
+.sectionThree .cardOne a:hover .fa-heart:before {
+  font-weight: bolder;
+  color: #9356DC;
+  cursor: pointer;
+  transition: color 450ms ease-out;
 }
 .sectionThree .cardOne img {
   width: 100%;
