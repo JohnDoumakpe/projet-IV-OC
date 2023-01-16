@@ -151,7 +151,6 @@ header img {
   background-color: #EAEAEA;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 -3px 2px -2px #EAEAEA;
 }
 .location form {
   width: 100%;
@@ -159,12 +158,13 @@ header img {
 }
 .location form .search {
   width: 100%;
-  height: 40px;
+  height: 50px;
   text-align: center;
   background-color: #EAEAEA;
   border-color: #FFFFFF;
   border-style: solid;
   border-width: 0.5px;
+  box-shadow: 0 -3px 2px -2px #7E7E7E;
 }
 .location form .search::placeholder {
   color: #353535;
@@ -327,6 +327,94 @@ footer article a .fa-hands-helping:before, footer article a .fa-handshake-angle:
 }
 footer article h3 {
   margin-bottom: 0px;
+}
+
+header i {
+  position: absolute;
+  margin-left: -300px;
+  margin-top: 15px;
+  color: #353535;
+  font-size: larger;
+}
+
+.background {
+  width: 100%;
+  height: 50px;
+}
+.background img {
+  width: 100%;
+  height: 275px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.card-menu {
+  margin-top: 155px;
+  width: 100%;
+  height: 1200px;
+  background-color: #F7F7F7;
+  position: relative;
+  border-radius: 45px 45px 0px 0;
+}
+.card-menu .entete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card-menu .entete h1 {
+  font-family: Shrikhand;
+}
+.card-menu .entete i {
+  font-size: 35px;
+}
+.card-menu .entree {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.card-menu .entree h2 {
+  color: #7E7E7E;
+  font-size: 15px;
+  border-bottom: 3px solid;
+  border-bottom-color: #99E2D0;
+  padding-bottom: 10px;
+  width: 40px;
+}
+.card-menu .entree .entreeOne {
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 15px;
+}
+.card-menu .entree .entreeOne h3 {
+  margin-top: 0px;
+}
+.card-menu .entree .entreeOne .tarif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -25px;
+}
+.card-menu .entree .entreeOne .tarif p {
+  color: #7E7E7E;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.card-menu .entree .entreeOne .tarif .prix p {
+  color: #000000;
+}
+
+.button {
+  text-align: center;
+  margin: 40px;
+}
+.button .btn {
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: #FFFFFF;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */

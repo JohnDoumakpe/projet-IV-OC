@@ -1,0 +1,92 @@
+header{
+    i{
+        position: absolute;
+        margin-left: -300px;
+        margin-top: 15px;
+        color: $color-grey2;
+        font-size: larger;
+    }
+}
+.background{
+    width:100%;
+    height :50px;
+    img{
+        width:100%;
+        height:275px;
+        margin-top: 10px;
+        object-fit: cover;
+    }  
+}
+
+.card-menu{
+    margin-top: 155px;
+    width: 100%;
+    height: 1200px;
+    background-color: $color-grey3;
+    position: relative;
+    border-radius: 45px 45px 0px 0;
+    
+    .entete{
+        @include section-display2;
+        align-items: center;
+        justify-content: space-evenly;
+        h1{
+            font-family:Shrikhand;
+        }
+        i{
+            font-size: 35px;
+        }
+    }
+
+    .entree{
+        @include section-display1;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        h2{
+            color: $color-grey-icone;
+            font-size: 15px;
+            border-bottom: 3px solid;
+            border-bottom-color: $color-tertiary;
+            padding-bottom: 10px;
+            width: 40px;
+        }
+        .entreeOne{
+            width : 90%;
+            border-radius: 15px;
+            box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+            padding: 10px 10px 0px 10px;
+            margin-bottom: 15px;
+            h3{
+                margin-top:0px;
+            }
+            .tarif{
+                @include section-display2;
+                justify-content: space-between;
+                margin-top: -25px;
+                p{
+                    color: $color-grey-icone;
+                    margin-top: 10px;
+                    font-size: 14px;
+                } 
+                .prix{
+                    p{
+                        color:$color-black;
+                    }
+                        
+                }
+            }
+        }
+        
+    }
+
+}
+.button{
+    text-align : center;
+    margin : 40px;
+    .btn{
+    @include background-color-gradient;
+    color:$color-white;
+    border:none;
+    }
+            
+}
