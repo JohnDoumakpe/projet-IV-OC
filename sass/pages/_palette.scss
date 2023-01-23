@@ -1,7 +1,7 @@
 header{
     i{
         position: absolute;
-        margin-left: -300px;
+        margin-left: -85px;
         margin-top: 15px;
         color: $color-grey2;
         font-size: larger;
@@ -21,7 +21,7 @@ header{
 .card-menu{
     margin-top: 155px;
     width: 100%;
-    height: 1200px;
+    padding-bottom:30px;
     background-color: $color-grey3;
     position: relative;
     border-radius: 45px 45px 0px 0;
@@ -39,6 +39,10 @@ header{
     }
 
     .entree{
+        animation-duration: 3s;
+        animation-delay: 100ms;
+        animation-name: glissement;
+        transition: all 450ms ease-out;
         @include section-display1;
         margin-left: 10px;
         margin-bottom: 10px;
@@ -49,6 +53,28 @@ header{
             border-bottom-color: $color-tertiary;
             padding-bottom: 10px;
             width: 40px;
+        }
+        a{
+            &:hover{
+                .background-green{
+                    @include section-display1;
+                    //visibility :hidden;
+                    background-color: #99E2D0;
+                    width: 16%;
+                    margin-top: -26px;
+                    //margin-right: -182px;
+                    margin-right: -10px;
+                    height: 67px;
+                    border-radius: 0 10px 10px 0;
+                    .fa-circle-check{
+                        display:flex;
+                        visibility:visible;
+                        justify-content: center;
+                        margin-top: 25px;
+                        color: white;
+                    }
+                }
+            }
         }
         .entreeOne{
             width : 90%;
@@ -71,22 +97,193 @@ header{
                 .prix{
                     p{
                         color:$color-black;
+                        margin-left: 160px;
+                        margin-right:5px;
+                    }
+                        
+                }  
+            }
+            .fa-circle-check{
+                visibility:hidden;
+            }
+        }
+      
+    }
+
+ 
+
+    .plat{
+        animation-duration: 3s;
+        animation-delay: 3000ms;
+        animation-name: glissement;
+        transition: all 450ms ease-out;
+        @include section-display1;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        h2{
+            color: $color-grey-icone;
+            font-size: 15px;
+            border-bottom: 3px solid;
+            border-bottom-color: $color-tertiary;
+            padding-bottom: 10px;
+            width: 40px;
+        }
+        a{
+            &:hover{
+                .background-green{
+                    @include section-display1;
+                    //visibility :hidden;
+                    background-color: #99E2D0;
+                    width: 16%;
+                    margin-top: -26px;
+                    //margin-right: -182px;
+                    margin-right: -10px;
+                    height: 67px;
+                    border-radius: 0 10px 10px 0;
+                    .fa-circle-check{
+                        display:flex;
+                        visibility:visible;
+                        justify-content: center;
+                        margin-top: 25px;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .platOne{
+            width : 90%;
+            border-radius: 15px;
+            box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+            padding: 10px 10px 0px 10px;
+            margin-bottom: 15px;
+            h3{
+                margin-top:0px;
+            }
+            .tarif{
+                @include section-display2;
+                justify-content: space-between;
+                margin-top: -25px;
+                p{
+                    color: $color-grey-icone;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    
+                } 
+                .prix{
+                    p{
+                        color:$color-black;
+                        margin-left: 160px;
+                        margin-right: 5px;
                     }
                         
                 }
             }
+            .fa-circle-check{
+                visibility:hidden;
+            }
         }
-        
     }
+        
+
+
+    .dessert{
+    animation-duration: 3s;
+    animation-delay: 6000ms;
+    animation-name: glissement;
+    transition: all 450ms ease-out;
+    @include section-display1;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    h2{
+        color: $color-grey-icone;
+        font-size: 15px;
+        border-bottom: 3px solid;
+        border-bottom-color: $color-tertiary;
+        padding-bottom: 10px;
+        width: 40px;
+    }
+    a{
+        &:hover{
+            .background-green{
+                @include section-display1;
+                //visibility :hidden;
+                background-color: #99E2D0;
+                width: 16%;
+                margin-top: -26px;
+                //margin-right: -182px;
+                margin-right: -10px;
+                height: 67px;
+                border-radius: 0 10px 10px 0;
+                .fa-circle-check{
+                    display:flex;
+                    visibility:visible;
+                    justify-content: center;
+                    margin-top: 25px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .dessertOne{
+        width : 90%;
+        border-radius: 15px;
+        box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+        padding: 10px 10px 0px 10px;
+        margin-bottom: 15px;
+        h3{
+            margin-top:0px;
+        }
+        .tarif{
+            @include section-display2;
+            justify-content: space-between;
+            margin-top: -25px;
+            p{
+                color: $color-grey-icone;
+                margin-top: 10px;
+                font-size: 14px;
+            } 
+            .prix{
+                p{
+                    color:$color-black;
+                    margin-left: 160px;
+                    margin-right: 5px;
+                }
+                        
+            }
+        }
+        .fa-circle-check{
+            visibility:hidden;
+        }
+    }
+        
+}
 
 }
+@keyframes glissement {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 .button{
     text-align : center;
     margin : 40px;
     .btn{
-    @include background-color-gradient;
-    color:$color-white;
-    border:none;
-    }
-            
+        @include background-color-gradient;
+        color:$color-white;
+        border:none;
+        padding-left: 30px;
+        padding-right: 30px;
+        transition: all 450ms ease-out;
+        &:hover{
+            @include color-hover;
+            opacity : 0.7;     
+        }
+    }            
 }

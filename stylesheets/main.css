@@ -207,7 +207,7 @@ header img {
 }
 .sectionTwo .btn-fonctionnement {
   color: #000000;
-  transition: all 450ms;
+  transition: all 450ms ease-out;
 }
 .sectionTwo .btn-fonctionnement:hover {
   cursor: pointer;
@@ -216,6 +216,9 @@ header img {
 }
 .sectionTwo .btn-fonctionnement:hover .fa-mobile-alt:before, .sectionTwo .btn-fonctionnement:hover .fa-mobile-screen-button:before, .sectionTwo .btn-fonctionnement:hover .fa-list-dots:before, .sectionTwo .btn-fonctionnement:hover .fa-list-ul:before, .sectionTwo .btn-fonctionnement:hover .fa-store:before {
   color: #9356DC;
+}
+.sectionTwo .fa-1, .sectionTwo .fa-2, .sectionTwo .fa-3 {
+  text-align: center;
 }
 .sectionTwo .fa-mobile-alt:before, .sectionTwo .fa-mobile-screen-button:before {
   color: #7E7E7E;
@@ -227,11 +230,23 @@ header img {
 }
 .sectionTwo .fa-1:before {
   color: #9356DC;
-  margin-left: -78px;
+  margin-left: -85px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #9356DC;
+  position: absolute;
+  color: white;
 }
 .sectionTwo .fa-2:before, .sectionTwo .fa-3:before {
   color: #9356DC;
-  margin-left: -85px;
+  margin-left: -90px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #9356DC;
+  position: absolute;
+  color: white;
 }
 
 .sectionThree {
@@ -331,7 +346,7 @@ footer article h3 {
 
 header i {
   position: absolute;
-  margin-left: -300px;
+  margin-left: -85px;
   margin-top: 15px;
   color: #353535;
   font-size: larger;
@@ -351,7 +366,7 @@ header i {
 .card-menu {
   margin-top: 155px;
   width: 100%;
-  height: 1200px;
+  padding-bottom: 30px;
   background-color: #F7F7F7;
   position: relative;
   border-radius: 45px 45px 0px 0;
@@ -369,6 +384,10 @@ header i {
   font-size: 35px;
 }
 .card-menu .entree {
+  animation-duration: 3s;
+  animation-delay: 100ms;
+  animation-name: glissement;
+  transition: all 450ms ease-out;
   display: flex;
   flex-direction: column;
   margin-left: 10px;
@@ -381,6 +400,23 @@ header i {
   border-bottom-color: #99E2D0;
   padding-bottom: 10px;
   width: 40px;
+}
+.card-menu .entree a:hover .background-green {
+  display: flex;
+  flex-direction: column;
+  background-color: #99E2D0;
+  width: 16%;
+  margin-top: -26px;
+  margin-right: -10px;
+  height: 67px;
+  border-radius: 0 10px 10px 0;
+}
+.card-menu .entree a:hover .background-green .fa-circle-check {
+  display: flex;
+  visibility: visible;
+  justify-content: center;
+  margin-top: 25px;
+  color: white;
 }
 .card-menu .entree .entreeOne {
   width: 90%;
@@ -405,8 +441,151 @@ header i {
 }
 .card-menu .entree .entreeOne .tarif .prix p {
   color: #000000;
+  margin-left: 160px;
+  margin-right: 5px;
+}
+.card-menu .entree .entreeOne .fa-circle-check {
+  visibility: hidden;
+}
+.card-menu .plat {
+  animation-duration: 3s;
+  animation-delay: 3000ms;
+  animation-name: glissement;
+  transition: all 450ms ease-out;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.card-menu .plat h2 {
+  color: #7E7E7E;
+  font-size: 15px;
+  border-bottom: 3px solid;
+  border-bottom-color: #99E2D0;
+  padding-bottom: 10px;
+  width: 40px;
+}
+.card-menu .plat a:hover .background-green {
+  display: flex;
+  flex-direction: column;
+  background-color: #99E2D0;
+  width: 16%;
+  margin-top: -26px;
+  margin-right: -10px;
+  height: 67px;
+  border-radius: 0 10px 10px 0;
+}
+.card-menu .plat a:hover .background-green .fa-circle-check {
+  display: flex;
+  visibility: visible;
+  justify-content: center;
+  margin-top: 25px;
+  color: white;
+}
+.card-menu .plat .platOne {
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 15px;
+}
+.card-menu .plat .platOne h3 {
+  margin-top: 0px;
+}
+.card-menu .plat .platOne .tarif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -25px;
+}
+.card-menu .plat .platOne .tarif p {
+  color: #7E7E7E;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.card-menu .plat .platOne .tarif .prix p {
+  color: #000000;
+  margin-left: 160px;
+  margin-right: 5px;
+}
+.card-menu .plat .platOne .fa-circle-check {
+  visibility: hidden;
+}
+.card-menu .dessert {
+  animation-duration: 3s;
+  animation-delay: 6000ms;
+  animation-name: glissement;
+  transition: all 450ms ease-out;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.card-menu .dessert h2 {
+  color: #7E7E7E;
+  font-size: 15px;
+  border-bottom: 3px solid;
+  border-bottom-color: #99E2D0;
+  padding-bottom: 10px;
+  width: 40px;
+}
+.card-menu .dessert a:hover .background-green {
+  display: flex;
+  flex-direction: column;
+  background-color: #99E2D0;
+  width: 16%;
+  margin-top: -26px;
+  margin-right: -10px;
+  height: 67px;
+  border-radius: 0 10px 10px 0;
+}
+.card-menu .dessert a:hover .background-green .fa-circle-check {
+  display: flex;
+  visibility: visible;
+  justify-content: center;
+  margin-top: 25px;
+  color: white;
+}
+.card-menu .dessert .dessertOne {
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 15px;
+}
+.card-menu .dessert .dessertOne h3 {
+  margin-top: 0px;
+}
+.card-menu .dessert .dessertOne .tarif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -25px;
+}
+.card-menu .dessert .dessertOne .tarif p {
+  color: #7E7E7E;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.card-menu .dessert .dessertOne .tarif .prix p {
+  color: #000000;
+  margin-left: 160px;
+  margin-right: 5px;
+}
+.card-menu .dessert .dessertOne .fa-circle-check {
+  visibility: hidden;
 }
 
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .button {
   text-align: center;
   margin: 40px;
@@ -415,6 +594,14 @@ header i {
   background: linear-gradient(#9356DC, #FF79DA);
   color: #FFFFFF;
   border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all 450ms ease-out;
+}
+.button .btn:hover {
+  background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=main.css.map */
