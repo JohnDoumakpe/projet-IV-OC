@@ -135,12 +135,83 @@
 }
 
 .sectionTwo{
-    @include section-display1;
+    
+    h2{
+        margin-left : 200px;
+    }
+    .fonctionnement{
+        @include section-display2;
+        justify-content: center;
+        .btn-fonctionnement{
+            width:20%;
+            @include section-display2;
+            justify-content:center;
+            margin-right: 20px;
+            padding-right: 25px;
+            color:$color-black;
+            transition: all 450ms ease-out;
+            &:hover {
+                cursor: pointer;
+                background-color:$color-primary2;
+                opacity:1;
+                .fa-mobile-alt:before, .fa-mobile-screen-button:before, .fa-list-dots:before, .fa-list-ul:before,.fa-store:before{
+                color:$color-primary;
+                
+                }     
+            }
+        }
+        .fa-1, .fa-2, .fa-3  {
+        text-align: center;
+        }
+       
+        .fa-mobile-alt:before, .fa-mobile-screen-button:before{
+            color:$color-grey-icone;
+            margin-left: -25px;
+                    
+        }
+            
+        .fa-list-dots:before, .fa-list-ul:before,.fa-store:before {
+            color:$color-grey-icone;
+            margin-left: -30px;
+        }
+            
+        .fa-1:before{
+            color:$color-primary;
+            margin-left: -55px;  
+            width: 20px;
+            height: 20px; 
+            border-radius: 20px;
+            background:$color-primary;
+            position : absolute;
+            color: white;  
+        } 
+        
+        .fa-2:before,  .fa-3:before {
+            color:$color-primary;
+            margin-left: -60px;   
+            width: 20px;
+            height: 20px; 
+            border-radius: 20px;
+            background:$color-primary;
+            position : absolute;
+            color: white;
+
+        }
+    }
+   
+} 
+
+@media (max-width: 992px) {
+    .sectionTwo{
+    @include section-display2;
     align-items: center;
     margin-top: 20px;
     h2{
         margin-right: 130px;
        
+    }
+    .fonctionnement{
+
     }
     .btn-fonctionnement{
         color:$color-black;
@@ -193,9 +264,78 @@
         color: white;
 
     }
-  
-    
 } 
+}
+
+@media (max-width: 768px) {
+   .sectionTwo{
+        h2{
+      
+    }
+    .fonctionnement{
+        @include section-display2;
+        justify-content: center;
+        .btn-fonctionnement{
+            width:20%;
+            @include section-display2;
+            justify-content:center;
+            margin-right: 20px;
+            padding-right: 25px;
+            color:$color-black;
+            transition: all 450ms ease-out;
+            &:hover {
+                cursor: pointer;
+                background-color:$color-primary2;
+                opacity:1;
+                .fa-mobile-alt:before, .fa-mobile-screen-button:before, .fa-list-dots:before, .fa-list-ul:before,.fa-store:before{
+                color:$color-primary;
+                
+                }     
+            }
+        }
+        .fa-1, .fa-2, .fa-3  {
+        text-align: center;
+        }
+       
+        .fa-mobile-alt:before, .fa-mobile-screen-button:before{
+            color:$color-grey-icone;
+            margin-left: -25px;
+                    
+        }
+            
+        .fa-list-dots:before, .fa-list-ul:before,.fa-store:before {
+            color:$color-grey-icone;
+            margin-left: -30px;
+        }
+            
+        .fa-1:before{
+            color:$color-primary;
+            margin-left: -55px;  
+            width: 20px;
+            height: 20px; 
+            border-radius: 20px;
+            background:$color-primary;
+            position : absolute;
+            color: white;  
+        } 
+        
+        .fa-2:before,  .fa-3:before {
+            color:$color-primary;
+            margin-left: -60px;   
+            width: 20px;
+            height: 20px; 
+            border-radius: 20px;
+            background:$color-primary;
+            position : absolute;
+            color: white;
+
+        }
+    }
+       
+} 
+}
+
+
     
 
 .sectionThree{ 
