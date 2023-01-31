@@ -38,7 +38,6 @@ h1, h2, h3, h4, h5 {
 
 header {
   max-width: 1400px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -81,7 +80,7 @@ header img {
   }
 }
 body {
-  margin: 0 auto;
+  max-width: 1400px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -91,7 +90,6 @@ body {
 header, main, footer, .container {
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
 }
 
 @media (max-width: 992px) {
@@ -130,13 +128,13 @@ header, main, footer, .container {
   z-index: 10;
   perspective: 300px;
   margin-top: 350px;
-  margin-left: 90px;
+  margin-left: 630px;
 }
 
 .loader::before {
   content: "";
   position: absolute;
-  left: calc(100% - 2px);
+  left: calc(100% - 0px);
   top: 0;
   z-index: -2;
   height: 10px;
@@ -166,6 +164,16 @@ header, main, footer, .container {
   animation: eggRst 1s ease-out infinite;
 }
 
+@media screen and (max-width: 992px) {
+  .loader {
+    margin-left: 410px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .loader {
+    margin-left: 95px;
+  }
+}
 @keyframes eggRst {
   0%, 100% {
     transform: translate(-50%, -20px) rotate3d(90, 0, 0, 90deg);
@@ -256,7 +264,7 @@ header, main, footer, .container {
 }
 
 .sectionTwo h2 {
-  margin-left: 200px;
+  margin-left: 175px;
 }
 .sectionTwo .fonctionnement {
   display: flex;
@@ -264,7 +272,7 @@ header, main, footer, .container {
   justify-content: center;
 }
 .sectionTwo .fonctionnement .btn-fonctionnement {
-  width: 20%;
+  width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -283,98 +291,117 @@ header, main, footer, .container {
 }
 .sectionTwo .fonctionnement .fa-1, .sectionTwo .fonctionnement .fa-2, .sectionTwo .fonctionnement .fa-3 {
   text-align: center;
+  position: relative;
 }
 .sectionTwo .fonctionnement .fa-mobile-alt:before, .sectionTwo .fonctionnement .fa-mobile-screen-button:before {
+  position: relative;
   color: #7E7E7E;
-  margin-left: -25px;
+  left: -15px;
 }
 .sectionTwo .fonctionnement .fa-list-dots:before, .sectionTwo .fonctionnement .fa-list-ul:before, .sectionTwo .fonctionnement .fa-store:before {
+  position: relative;
   color: #7E7E7E;
-  margin-left: -30px;
+  left: -20px;
 }
 .sectionTwo .fonctionnement .fa-1:before {
+  position: absolute;
   color: #9356DC;
-  margin-left: -55px;
+  left: -60px;
+  top: -1px;
   width: 20px;
   height: 20px;
   border-radius: 20px;
   background: #9356DC;
-  position: absolute;
   color: white;
 }
 .sectionTwo .fonctionnement .fa-2:before, .sectionTwo .fonctionnement .fa-3:before {
+  position: absolute;
   color: #9356DC;
-  margin-left: -60px;
+  left: -65px;
+  top: -1px;
   width: 20px;
   height: 20px;
   border-radius: 20px;
   background: #9356DC;
-  position: absolute;
   color: white;
 }
 
-@media (max-width: 992px) {
-  .sectionTwo {
+@media screen and (max-width: 992px) {
+  .sectionTwo .fonctionnement {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: right;
+    margin-right: -15px;
   }
-  .sectionTwo h2 {
-    margin-right: 130px;
-  }
-  .sectionTwo .btn-fonctionnement {
+  .sectionTwo .fonctionnement .btn-fonctionnement {
+    width: 205px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 20px;
+    padding-right: 0px;
+    padding-left: 20px;
     color: #000000;
     transition: all 450ms ease-out;
   }
-  .sectionTwo .btn-fonctionnement:hover {
+  .sectionTwo .fonctionnement .btn-fonctionnement:hover {
     cursor: pointer;
     background-color: #F5EDFF;
     opacity: 1;
   }
-  .sectionTwo .btn-fonctionnement:hover .fa-mobile-alt:before, .sectionTwo .btn-fonctionnement:hover .fa-mobile-screen-button:before, .sectionTwo .btn-fonctionnement:hover .fa-list-dots:before, .sectionTwo .btn-fonctionnement:hover .fa-list-ul:before, .sectionTwo .btn-fonctionnement:hover .fa-store:before {
+  .sectionTwo .fonctionnement .btn-fonctionnement:hover .fa-mobile-alt:before, .sectionTwo .fonctionnement .btn-fonctionnement:hover .fa-mobile-screen-button:before, .sectionTwo .fonctionnement .btn-fonctionnement:hover .fa-list-dots:before, .sectionTwo .fonctionnement .btn-fonctionnement:hover .fa-list-ul:before, .sectionTwo .fonctionnement .btn-fonctionnement:hover .fa-store:before {
     color: #9356DC;
   }
-  .sectionTwo .fa-1, .sectionTwo .fa-2, .sectionTwo .fa-3 {
+  .sectionTwo .fonctionnement .fa-1, .sectionTwo .fonctionnement .fa-2, .sectionTwo .fonctionnement .fa-3 {
     text-align: center;
+    position: relative;
   }
-  .sectionTwo .fa-mobile-alt:before, .sectionTwo .fa-mobile-screen-button:before {
+  .sectionTwo .fonctionnement .fa-mobile-alt:before, .sectionTwo .fonctionnement .fa-mobile-screen-button:before {
+    position: relative;
     color: #7E7E7E;
-    margin-left: -43px;
+    left: -7px;
   }
-  .sectionTwo .fa-list-dots:before, .sectionTwo .fa-list-ul:before, .sectionTwo .fa-store:before {
+  .sectionTwo .fonctionnement .fa-list-dots:before, .sectionTwo .fonctionnement .fa-list-ul:before, .sectionTwo .fonctionnement .fa-store:before {
+    position: relative;
     color: #7E7E7E;
-    margin-left: -50px;
+    left: -10px;
   }
-  .sectionTwo .fa-1:before {
+  .sectionTwo .fonctionnement .fa-1:before {
+    position: absolute;
     color: #9356DC;
-    margin-left: -85px;
+    left: -35px;
+    top: -1px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
     background: #9356DC;
-    position: absolute;
     color: white;
   }
-  .sectionTwo .fa-2:before, .sectionTwo .fa-3:before {
+  .sectionTwo .fonctionnement .fa-2:before, .sectionTwo .fonctionnement .fa-3:before {
+    position: absolute;
     color: #9356DC;
-    margin-left: -90px;
+    left: -38px;
+    top: -1px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
     background: #9356DC;
-    position: absolute;
     color: white;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .sectionTwo h2 {
+    margin-left: 25px;
+  }
   .sectionTwo .fonctionnement {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: -25px;
   }
   .sectionTwo .fonctionnement .btn-fonctionnement {
-    width: 20%;
+    width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -404,7 +431,7 @@ header, main, footer, .container {
   }
   .sectionTwo .fonctionnement .fa-1:before {
     color: #9356DC;
-    margin-left: -55px;
+    margin-left: -25px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -414,7 +441,7 @@ header, main, footer, .container {
   }
   .sectionTwo .fonctionnement .fa-2:before, .sectionTwo .fonctionnement .fa-3:before {
     color: #9356DC;
-    margin-left: -60px;
+    margin-left: -30px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -425,83 +452,255 @@ header, main, footer, .container {
 }
 .sectionThree {
   width: 100%;
-  height: 1470px;
+  height: 450px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 40px;
   background-color: #F7F7F7;
+  overflow: hidden;
 }
 .sectionThree h2 {
-  margin-right: 180px;
+  margin-left: 175px;
+  margin-top: 60px;
 }
-.sectionThree .cardOne {
+.sectionThree .cards {
+  position: relative;
+  left: 133px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sectionThree .cards .cardOne {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  margin-left: 40px;
   background-color: #FFFFFF;
   border-radius: 20px;
-  width: 95%;
+  width: 45%;
+  height: 250px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
 }
-.sectionThree .cardOne a {
+.sectionThree .cards .cardOne a {
   text-decoration: none;
   color: #000000;
 }
-.sectionThree .cardOne .heart:hover .fa-heart:before {
+.sectionThree .cards .cardOne .heart:hover .fa-heart:before {
   font-weight: bolder;
   color: #9356DC;
   cursor: pointer;
   transition: color 450ms ease-out;
 }
-.sectionThree .cardOne img {
+.sectionThree .cards .cardOne img {
   width: 100%;
-  height: 227px;
+  height: 165px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.sectionThree .cardOne .info-restaurant {
+.sectionThree .cards .cardOne .info-restaurant {
   margin-left: -25px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.sectionThree .cardOne .info-restaurant .fa-heart:before {
+.sectionThree .cards .cardOne .info-restaurant .fa-heart:before {
   font-size: 35px;
   position: absolute;
   margin-left: -25px;
 }
-.sectionThree .cardOne .info-restaurant p {
+.sectionThree .cards .cardOne .info-restaurant p {
   margin-top: 5px;
 }
-.sectionThree .cardOne .info-restaurant h3 {
+.sectionThree .cards .cardOne .info-restaurant h3 {
   margin-bottom: 0px;
 }
-.sectionThree .cardOne .alert {
+.sectionThree .cards .cardOne .alert {
+  display: flex;
+  flex-direction: column;
   width: 120px;
   height: 40px;
   background-color: #99E2D0;
-  position: absolute;
-  right: 35px;
-  margin-top: -305px;
+  position: relative;
+  left: 175px;
+  bottom: 235px;
 }
-.sectionThree .cardOne .alert p {
+.sectionThree .cards .cardOne .alert p {
   text-align: center;
   margin-top: 10px;
   color: #008766;
 }
 
+@media (max-width: 992px) {
+  .sectionThree {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: #F7F7F7;
+    overflow: hidden;
+  }
+  .sectionThree .cards {
+    position: relative;
+    left: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sectionThree .cards .cardOne {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 45%;
+    height: 250px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+  }
+  .sectionThree .cards .cardOne a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .sectionThree .cards .cardOne .heart:hover .fa-heart:before {
+    font-weight: bolder;
+    color: #9356DC;
+    cursor: pointer;
+    transition: color 450ms ease-out;
+  }
+  .sectionThree .cards .cardOne img {
+    width: 100%;
+    height: 165px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+  .sectionThree .cards .cardOne .info-restaurant {
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: small;
+  }
+  .sectionThree .cards .cardOne .info-restaurant .fa-heart:before {
+    font-size: 35px;
+    position: absolute;
+    margin-left: -25px;
+  }
+  .sectionThree .cards .cardOne .info-restaurant p {
+    margin-top: 5px;
+  }
+  .sectionThree .cards .cardOne .info-restaurant h3 {
+    margin-bottom: 0px;
+  }
+  .sectionThree .cards .cardOne .alert {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 40px;
+    background-color: #99E2D0;
+    position: relative;
+    left: 80px;
+    bottom: 220px;
+  }
+  .sectionThree .cards .cardOne .alert p {
+    text-align: center;
+    margin-top: 10px;
+    color: #008766;
+  }
+}
+@media (max-width: 768px) {
+  .sectionThree {
+    width: 100%;
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: #F7F7F7;
+  }
+  .sectionThree h2 {
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+  .sectionThree .cards {
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sectionThree .cards .cardOne {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 90%;
+    height: 250px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+  }
+  .sectionThree .cards .cardOne a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .sectionThree .cards .cardOne .heart:hover .fa-heart:before {
+    font-weight: bolder;
+    color: #9356DC;
+    cursor: pointer;
+    transition: color 450ms ease-out;
+  }
+  .sectionThree .cards .cardOne img {
+    width: 100%;
+    height: 165px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+  .sectionThree .cards .cardOne .info-restaurant {
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: medium;
+  }
+  .sectionThree .cards .cardOne .info-restaurant .fa-heart:before {
+    font-size: 35px;
+    position: absolute;
+    margin-left: -25px;
+  }
+  .sectionThree .cards .cardOne .info-restaurant p {
+    margin-top: 5px;
+  }
+  .sectionThree .cards .cardOne .info-restaurant h3 {
+    margin-bottom: 0px;
+  }
+  .sectionThree .cards .cardOne .alert {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 40px;
+    background-color: #99E2D0;
+    position: relative;
+    left: 190px;
+    bottom: 235px;
+  }
+  .sectionThree .cards .cardOne .alert p {
+    text-align: center;
+    margin-top: 10px;
+    color: #008766;
+  }
+}
 footer {
   background-color: #353535;
-  height: 250px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 footer article {
   display: flex;
   flex-direction: row;
   color: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 25px;
 }
 footer article a {
@@ -515,17 +714,99 @@ footer article a .fa-hands-helping:before, footer article a .fa-handshake-angle:
   margin-right: 9px;
 }
 footer article h3 {
-  margin-bottom: 0px;
+  font-size: larger;
+  margin-top: -3px;
+  margin-left: 20px;
+  font-style: italic;
 }
 
+@media (max-width: 992px) {
+  footer {
+    background-color: #353535;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  footer article {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 25px;
+  }
+  footer article a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  footer article a .fa-cutlery:before, footer article a .fa-utensils:before {
+    margin-right: 15px;
+  }
+  footer article a .fa-hands-helping:before, footer article a .fa-handshake-angle:before {
+    margin-right: 9px;
+  }
+  footer article h3 {
+    font-size: larger;
+    margin-top: -3px;
+    margin-left: 20px;
+    font-style: italic;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    background-color: #353535;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  footer article {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  footer article a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  footer article a .fa-cutlery:before, footer article a .fa-utensils:before {
+    margin-right: 15px;
+  }
+  footer article a .fa-hands-helping:before, footer article a .fa-handshake-angle:before {
+    margin-right: 9px;
+  }
+  footer article h3 {
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+}
 header i {
   position: absolute;
-  margin-left: -85px;
+  margin-left: -400px;
   margin-top: 15px;
   color: #353535;
   font-size: larger;
 }
 
+@media screen and (max-width: 992px) {
+  header i {
+    position: absolute;
+    margin-left: -300px;
+    margin-top: 15px;
+    color: #353535;
+    font-size: larger;
+  }
+}
+@media screen and (max-width: 768px) {
+  header i {
+    position: absolute;
+    margin-left: -85px;
+    margin-top: 15px;
+    color: #353535;
+    font-size: larger;
+  }
+}
 .background {
   width: 100%;
   height: 50px;
@@ -539,7 +820,8 @@ header i {
 
 .card-menu {
   margin-top: 155px;
-  width: 100%;
+  width: 70%;
+  margin-left: 205px;
   padding-bottom: 30px;
   background-color: #F7F7F7;
   position: relative;
@@ -750,6 +1032,20 @@ header i {
   visibility: hidden;
 }
 
+@media screen and (max-width: 992px) {
+  .card-menu {
+    margin-top: 155px;
+    width: 70%;
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-menu {
+    margin-top: 155px;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 @keyframes glissement {
   from {
     margin-left: 100%;

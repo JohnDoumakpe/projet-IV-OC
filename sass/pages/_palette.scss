@@ -1,12 +1,40 @@
 header{
     i{
         position: absolute;
-        margin-left: -85px;
+        margin-left: -400px;
         margin-top: 15px;
         color: $color-grey2;
         font-size: larger;
     }
 }
+
+
+@media screen and (max-width: 992px) {
+    header{
+        i{
+            position: absolute;
+            margin-left: -300px;
+            margin-top: 15px;
+            color: $color-grey2;
+            font-size: larger;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        i{
+            position: absolute;
+            margin-left: -85px;
+            margin-top: 15px;
+            color: $color-grey2;
+            font-size: larger;
+        }
+    }
+}
+
+
 .background{
     width:100%;
     height :50px;
@@ -18,9 +46,11 @@ header{
     }  
 }
 
+
 .card-menu{
     margin-top: 155px;
-    width: 100%;
+    width: 70%;
+    margin-left: 205px;
     padding-bottom:30px;
     background-color: $color-grey3;
     position: relative;
@@ -259,6 +289,25 @@ header{
 }
 
 }
+
+@media screen and (max-width: 992px) {
+    .card-menu{
+        margin-top: 155px;
+        width: 70%;
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-menu{
+        margin-top: 155px;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+
+
 @keyframes glissement {
     from {
         margin-left: 100%;
