@@ -334,7 +334,8 @@ header, main, footer, .container {
     margin-right: -15px;
   }
   .sectionTwo .fonctionnement .btn-fonctionnement {
-    width: 205px;
+    font-size: smaller;
+    width: 175px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -431,7 +432,7 @@ header, main, footer, .container {
   }
   .sectionTwo .fonctionnement .fa-1:before {
     color: #9356DC;
-    margin-left: -25px;
+    margin-left: -40px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -441,7 +442,7 @@ header, main, footer, .container {
   }
   .sectionTwo .fonctionnement .fa-2:before, .sectionTwo .fonctionnement .fa-3:before {
     color: #9356DC;
-    margin-left: -30px;
+    margin-left: -45px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -632,7 +633,7 @@ header, main, footer, .container {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 18px;
     background-color: #FFFFFF;
     border-radius: 20px;
     width: 90%;

@@ -229,7 +229,8 @@
                 justify-content: right;
                 margin-right: -15px;
                 .btn-fonctionnement{
-                    width:205px;
+                    font-size : smaller;
+                    width:175px;
                     @include section-display2;
                     justify-content:center;
                     margin-right: 20px;
@@ -339,7 +340,7 @@
                     
                 .fa-1:before{
                     color:$color-primary;
-                    margin-left: -25px;  
+                    margin-left: -40px;  
                     width: 20px;
                     height: 20px; 
                     border-radius: 20px;
@@ -350,7 +351,7 @@
                 
                 .fa-2:before,  .fa-3:before {
                     color:$color-primary;
-                    margin-left: -30px;   
+                    margin-left: -45px;   
                     width: 20px;
                     height: 20px; 
                     border-radius: 20px;
@@ -555,7 +556,7 @@
             .cardOne{
                 @include section-display1;
                 margin-top: 20px;
-                margin-left : 25px;
+                margin-left : 18px;
                 background-color:$color-white;
                 border-radius: 20px;
                 width :90%;
