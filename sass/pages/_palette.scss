@@ -59,22 +59,40 @@ header{
     .entete{
         @include section-display2;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content : center;
         h1{
             font-family:Shrikhand;
         }
         i{
             font-size: 35px;
+            margin-left : 20px;
         }
     }
 
+    @media screen and (max-width: 992px) {
+        .entete{
+            @include section-display2;
+            align-items: center;
+            justify-content: space-evenly;
+            h1{
+                font-family:Shrikhand;
+            }
+            i{
+                font-size: 35px;
+            }
+        }
+    }
+
+
+
     .entree{
+        width : 70%;
         animation-duration: 3s;
         animation-delay: 100ms;
         animation-name: glissement;
         transition: all 450ms ease-out;
         @include section-display1;
-        margin-left: 10px;
+        margin-left: 170px;
         margin-bottom: 10px;
         h2{
             color: $color-grey-icone;
@@ -141,15 +159,168 @@ header{
       
     }
 
+    @media screen and (max-width: 992px) {
+        .entree{
+            animation-duration: 3s;
+            animation-delay: 100ms;
+            animation-name: glissement;
+            transition: all 450ms ease-out;
+            @include section-display1;
+            margin-left: 110px;
+            margin-bottom: 10px;
+            h2{
+                color: $color-grey-icone;
+                font-size: 15px;
+                border-bottom: 3px solid;
+                border-bottom-color: $color-tertiary;
+                padding-bottom: 10px;
+                width: 40px;
+            }
+            a{
+                &:hover{
+                    .background-green{
+                        @include section-display1;
+                        //visibility :hidden;
+                        background-color: #99E2D0;
+                        width: 16%;
+                        margin-top: -26px;
+                        //margin-right: -182px;
+                        margin-right: -10px;
+                        height: 67px;
+                        border-radius: 0 10px 10px 0;
+                        transition: color 450ms ease-out;
+                        .fa-circle-check{
+                            display:flex;
+                            visibility:visible;
+                            justify-content: center;
+                            margin-top: 25px;
+                            color: white;
+                            }
+                        }
+                    }
+            }
+            .entreeOne{
+                width : 90%;
+                border-radius: 15px;
+                box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+                padding: 10px 10px 0px 10px;
+                margin-bottom: 15px;
+                h3{
+                    margin-top:0px;
+                }
+                .tarif{
+                    @include section-display2;
+                    justify-content: space-between;
+                    margin-top: -25px;
+                    p{
+                        color: $color-grey-icone;
+                        margin-top: 10px;
+                        font-size: 14px;
+                    } 
+                    .prix{
+                        p{
+                            color:$color-black;
+                            margin-left: 160px;
+                            margin-right:5px;
+                        }
+                                
+                    }  
+                }
+                .fa-circle-check{
+                    visibility:hidden;
+                }
+            }
+            
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .entree{
+            width : 100%;
+            animation-duration: 3s;
+            animation-delay: 100ms;
+            animation-name: glissement;
+            transition: all 450ms ease-out;
+            @include section-display1;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            h2{
+                color: $color-grey-icone;
+                font-size: 15px;
+                border-bottom: 3px solid;
+                border-bottom-color: $color-tertiary;
+                padding-bottom: 10px;
+                width: 40px;
+            }
+            a{
+                &:hover{
+                    .background-green{
+                        @include section-display1;
+                        //visibility :hidden;
+                        background-color: #99E2D0;
+                        width: 16%;
+                        margin-top: -26px;
+                        //margin-right: -182px;
+                        margin-right: -10px;
+                        height: 67px;
+                        border-radius: 0 10px 10px 0;
+                        transition: color 450ms ease-out;
+                        .fa-circle-check{
+                            display:flex;
+                            visibility:visible;
+                            justify-content: center;
+                            margin-top: 25px;
+                            color: white;
+                            }
+                        }
+                    }
+            }
+            .entreeOne{
+                width : 90%;
+                border-radius: 15px;
+                box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+                padding: 10px 10px 0px 10px;
+                margin-bottom: 15px;
+                h3{
+                    margin-top:0px;
+                }
+                .tarif{
+                    @include section-display2;
+                    justify-content: space-between;
+                    margin-top: -25px;
+                    p{
+                        color: $color-grey-icone;
+                        margin-top: 10px;
+                        font-size: 14px;
+                    } 
+                    .prix{
+                        p{
+                            color:$color-black;
+                            margin-left: 160px;
+                            margin-right:5px;
+                        }
+                                
+                    }  
+                }
+                .fa-circle-check{
+                    visibility:hidden;
+                }
+            }
+            
+        }
+
+    }
  
 
     .plat{
+        width : 70%;
         animation-duration: 3s;
         animation-delay: 3000ms;
         animation-name: glissement;
         transition: all 450ms ease-out;
         @include section-display1;
-        margin-left: 10px;
+        margin-left: 170px;
         margin-bottom: 10px;
         h2{
             color: $color-grey-icone;
@@ -214,80 +385,379 @@ header{
             }
         }
     }
+
+    @media screen and (max-width: 992px) {
+        .plat{
+            animation-duration: 3s;
+            animation-delay: 3000ms;
+            animation-name: glissement;
+            transition: all 450ms ease-out;
+            @include section-display1;
+            margin-left: 110px;
+            margin-bottom: 10px;
+            h2{
+                color: $color-grey-icone;
+                font-size: 15px;
+                border-bottom: 3px solid;
+                border-bottom-color: $color-tertiary;
+                padding-bottom: 10px;
+                width: 40px;
+            }
+            a{
+                &:hover{
+                    .background-green{
+                        @include section-display1;
+                        //visibility :hidden;
+                        background-color: #99E2D0;
+                        width: 16%;
+                        margin-top: -26px;
+                        //margin-right: -182px;
+                        margin-right: -10px;
+                        height: 67px;
+                        border-radius: 0 10px 10px 0;
+                        .fa-circle-check{
+                            display:flex;
+                            visibility:visible;
+                            justify-content: center;
+                            margin-top: 25px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .platOne{
+                width : 90%;
+                border-radius: 15px;
+                box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+                padding: 10px 10px 0px 10px;
+                margin-bottom: 15px;
+                h3{
+                    margin-top:0px;
+                }
+                .tarif{
+                    @include section-display2;
+                    justify-content: space-between;
+                    margin-top: -25px;
+                    p{
+                        color: $color-grey-icone;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        
+                    } 
+                    .prix{
+                        p{
+                            color:$color-black;
+                            margin-left: 160px;
+                            margin-right: 5px;
+                        }
+                            
+                    }
+                }
+                .fa-circle-check{
+                    visibility:hidden;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .plat{
+            width : 100%;
+            animation-duration: 3s;
+            animation-delay: 3000ms;
+            animation-name: glissement;
+            transition: all 450ms ease-out;
+            @include section-display1;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            h2{
+                color: $color-grey-icone;
+                font-size: 15px;
+                border-bottom: 3px solid;
+                border-bottom-color: $color-tertiary;
+                padding-bottom: 10px;
+                width: 40px;
+            }
+            a{
+                &:hover{
+                    .background-green{
+                        @include section-display1;
+                        //visibility :hidden;
+                        background-color: #99E2D0;
+                        width: 16%;
+                        margin-top: -26px;
+                        //margin-right: -182px;
+                        margin-right: -10px;
+                        height: 67px;
+                        border-radius: 0 10px 10px 0;
+                        .fa-circle-check{
+                            display:flex;
+                            visibility:visible;
+                            justify-content: center;
+                            margin-top: 25px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .platOne{
+                width : 90%;
+                border-radius: 15px;
+                box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+                padding: 10px 10px 0px 10px;
+                margin-bottom: 15px;
+                h3{
+                    margin-top:0px;
+                }
+                .tarif{
+                    @include section-display2;
+                    justify-content: space-between;
+                    margin-top: -25px;
+                    p{
+                        color: $color-grey-icone;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        
+                    } 
+                    .prix{
+                        p{
+                            color:$color-black;
+                            margin-left: 160px;
+                            margin-right: 5px;
+                        }
+                            
+                    }
+                }
+                .fa-circle-check{
+                    visibility:hidden;
+                }
+            }
+        }
+    }
         
 
 
     .dessert{
-    animation-duration: 3s;
-    animation-delay: 6000ms;
-    animation-name: glissement;
-    transition: all 450ms ease-out;
-    @include section-display1;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    h2{
-        color: $color-grey-icone;
-        font-size: 15px;
-        border-bottom: 3px solid;
-        border-bottom-color: $color-tertiary;
-        padding-bottom: 10px;
-        width: 40px;
-    }
-    a{
-        &:hover{
-            .background-green{
-                @include section-display1;
-                //visibility :hidden;
-                background-color: #99E2D0;
-                width: 16%;
-                margin-top: -26px;
-                //margin-right: -182px;
-                margin-right: -10px;
-                height: 67px;
-                border-radius: 0 10px 10px 0;
-                .fa-circle-check{
-                    display:flex;
-                    visibility:visible;
-                    justify-content: center;
-                    margin-top: 25px;
-                    color: white;
+        width : 70%;
+        animation-duration: 3s;
+        animation-delay: 6000ms;
+        animation-name: glissement;
+        transition: all 450ms ease-out;
+        @include section-display1;
+        margin-left: 170px;
+        margin-bottom: 10px;
+        h2{
+            color: $color-grey-icone;
+            font-size: 15px;
+            border-bottom: 3px solid;
+            border-bottom-color: $color-tertiary;
+            padding-bottom: 10px;
+            width: 40px;
+        }
+        a{
+            &:hover{
+                .background-green{
+                    @include section-display1;
+                    //visibility :hidden;
+                    background-color: #99E2D0;
+                    width: 16%;
+                    margin-top: -26px;
+                    //margin-right: -182px;
+                    margin-right: -10px;
+                    height: 67px;
+                    border-radius: 0 10px 10px 0;
+                    .fa-circle-check{
+                        display:flex;
+                        visibility:visible;
+                        justify-content: center;
+                        margin-top: 25px;
+                        color: white;
+                    }
                 }
             }
         }
-    }
-    .dessertOne{
-        width : 90%;
-        border-radius: 15px;
-        box-shadow: 0 0 16px rgb(0 0 0 / 18%);
-        padding: 10px 10px 0px 10px;
-        margin-bottom: 15px;
-        h3{
-            margin-top:0px;
-        }
-        .tarif{
-            @include section-display2;
-            justify-content: space-between;
-            margin-top: -25px;
-            p{
-                color: $color-grey-icone;
-                margin-top: 10px;
-                font-size: 14px;
-            } 
-            .prix{
+        .dessertOne{
+            width : 90%;
+            border-radius: 15px;
+            box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+            padding: 10px 10px 0px 10px;
+            margin-bottom: 15px;
+            h3{
+                margin-top:0px;
+            }
+            .tarif{
+                @include section-display2;
+                justify-content: space-between;
+                margin-top: -25px;
                 p{
-                    color:$color-black;
-                    margin-left: 160px;
-                    margin-right: 5px;
+                    color: $color-grey-icone;
+                    margin-top: 10px;
+                    font-size: 14px;
+                } 
+                .prix{
+                    p{
+                        color:$color-black;
+                        margin-left: 160px;
+                        margin-right: 5px;
+                    }
+                            
                 }
-                        
+            }
+            .fa-circle-check{
+                visibility:hidden;
             }
         }
-        .fa-circle-check{
-            visibility:hidden;
+            
+    }
+
+    @media screen and (max-width: 992px) {
+        .dessert{
+            animation-duration: 3s;
+            animation-delay: 6000ms;
+            animation-name: glissement;
+            transition: all 450ms ease-out;
+            @include section-display1;
+            margin-left: 110px;
+            margin-bottom: 10px;
+            h2{
+                color: $color-grey-icone;
+                font-size: 15px;
+                border-bottom: 3px solid;
+                border-bottom-color: $color-tertiary;
+                padding-bottom: 10px;
+                width: 40px;
+            }
+            a{
+                &:hover{
+                    .background-green{
+                        @include section-display1;
+                        //visibility :hidden;
+                        background-color: #99E2D0;
+                        width: 16%;
+                        margin-top: -26px;
+                        //margin-right: -182px;
+                        margin-right: -10px;
+                        height: 67px;
+                        border-radius: 0 10px 10px 0;
+                        .fa-circle-check{
+                            display:flex;
+                            visibility:visible;
+                            justify-content: center;
+                            margin-top: 25px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .dessertOne{
+                width : 90%;
+                border-radius: 15px;
+                box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+                padding: 10px 10px 0px 10px;
+                margin-bottom: 15px;
+                h3{
+                    margin-top:0px;
+                }
+                .tarif{
+                    @include section-display2;
+                    justify-content: space-between;
+                    margin-top: -25px;
+                    p{
+                        color: $color-grey-icone;
+                        margin-top: 10px;
+                        font-size: 14px;
+                    } 
+                    .prix{
+                        p{
+                            color:$color-black;
+                            margin-left: 160px;
+                            margin-right: 5px;
+                        }
+                                
+                    }
+                }
+                .fa-circle-check{
+                    visibility:hidden;
+                }
+            }
+                
         }
     }
-        
-}
+
+    @media screen and (max-width: 768px) {
+        .dessert{
+            width : 100%;
+            animation-duration: 3s;
+            animation-delay: 6000ms;
+            animation-name: glissement;
+            transition: all 450ms ease-out;
+            @include section-display1;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            h2{
+                color: $color-grey-icone;
+                font-size: 15px;
+                border-bottom: 3px solid;
+                border-bottom-color: $color-tertiary;
+                padding-bottom: 10px;
+                width: 40px;
+            }
+            a{
+                &:hover{
+                    .background-green{
+                        @include section-display1;
+                        //visibility :hidden;
+                        background-color: #99E2D0;
+                        width: 16%;
+                        margin-top: -26px;
+                        //margin-right: -182px;
+                        margin-right: -10px;
+                        height: 67px;
+                        border-radius: 0 10px 10px 0;
+                        .fa-circle-check{
+                            display:flex;
+                            visibility:visible;
+                            justify-content: center;
+                            margin-top: 25px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .dessertOne{
+                width : 90%;
+                border-radius: 15px;
+                box-shadow: 0 0 16px rgb(0 0 0 / 18%);
+                padding: 10px 10px 0px 10px;
+                margin-bottom: 15px;
+                h3{
+                    margin-top:0px;
+                }
+                .tarif{
+                    @include section-display2;
+                    justify-content: space-between;
+                    margin-top: -25px;
+                    p{
+                        color: $color-grey-icone;
+                        margin-top: 10px;
+                        font-size: 14px;
+                    } 
+                    .prix{
+                        p{
+                            color:$color-black;
+                            margin-left: 160px;
+                            margin-right: 5px;
+                        }
+                                
+                    }
+                }
+                .fa-circle-check{
+                    visibility:hidden;
+                }
+            }
+                
+        }
+    }
 
 }
 

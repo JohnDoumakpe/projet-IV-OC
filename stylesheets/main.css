@@ -832,22 +832,38 @@ header i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .card-menu .entete h1 {
   font-family: Shrikhand;
 }
 .card-menu .entete i {
   font-size: 35px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 992px) {
+  .card-menu .entete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .card-menu .entete h1 {
+    font-family: Shrikhand;
+  }
+  .card-menu .entete i {
+    font-size: 35px;
+  }
 }
 .card-menu .entree {
+  width: 70%;
   animation-duration: 3s;
   animation-delay: 100ms;
   animation-name: glissement;
   transition: all 450ms ease-out;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 170px;
   margin-bottom: 10px;
 }
 .card-menu .entree h2 {
@@ -905,14 +921,150 @@ header i {
 .card-menu .entree .entreeOne .fa-circle-check {
   visibility: hidden;
 }
+@media screen and (max-width: 992px) {
+  .card-menu .entree {
+    animation-duration: 3s;
+    animation-delay: 100ms;
+    animation-name: glissement;
+    transition: all 450ms ease-out;
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    margin-bottom: 10px;
+  }
+  .card-menu .entree h2 {
+    color: #7E7E7E;
+    font-size: 15px;
+    border-bottom: 3px solid;
+    border-bottom-color: #99E2D0;
+    padding-bottom: 10px;
+    width: 40px;
+  }
+  .card-menu .entree a:hover .background-green {
+    display: flex;
+    flex-direction: column;
+    background-color: #99E2D0;
+    width: 16%;
+    margin-top: -26px;
+    margin-right: -10px;
+    height: 67px;
+    border-radius: 0 10px 10px 0;
+    transition: color 450ms ease-out;
+  }
+  .card-menu .entree a:hover .background-green .fa-circle-check {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+  }
+  .card-menu .entree .entreeOne {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 15px;
+  }
+  .card-menu .entree .entreeOne h3 {
+    margin-top: 0px;
+  }
+  .card-menu .entree .entreeOne .tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -25px;
+  }
+  .card-menu .entree .entreeOne .tarif p {
+    color: #7E7E7E;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .card-menu .entree .entreeOne .tarif .prix p {
+    color: #000000;
+    margin-left: 160px;
+    margin-right: 5px;
+  }
+  .card-menu .entree .entreeOne .fa-circle-check {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-menu .entree {
+    width: 100%;
+    animation-duration: 3s;
+    animation-delay: 100ms;
+    animation-name: glissement;
+    transition: all 450ms ease-out;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .card-menu .entree h2 {
+    color: #7E7E7E;
+    font-size: 15px;
+    border-bottom: 3px solid;
+    border-bottom-color: #99E2D0;
+    padding-bottom: 10px;
+    width: 40px;
+  }
+  .card-menu .entree a:hover .background-green {
+    display: flex;
+    flex-direction: column;
+    background-color: #99E2D0;
+    width: 16%;
+    margin-top: -26px;
+    margin-right: -10px;
+    height: 67px;
+    border-radius: 0 10px 10px 0;
+    transition: color 450ms ease-out;
+  }
+  .card-menu .entree a:hover .background-green .fa-circle-check {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+  }
+  .card-menu .entree .entreeOne {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 15px;
+  }
+  .card-menu .entree .entreeOne h3 {
+    margin-top: 0px;
+  }
+  .card-menu .entree .entreeOne .tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -25px;
+  }
+  .card-menu .entree .entreeOne .tarif p {
+    color: #7E7E7E;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .card-menu .entree .entreeOne .tarif .prix p {
+    color: #000000;
+    margin-left: 160px;
+    margin-right: 5px;
+  }
+  .card-menu .entree .entreeOne .fa-circle-check {
+    visibility: hidden;
+  }
+}
 .card-menu .plat {
+  width: 70%;
   animation-duration: 3s;
   animation-delay: 3000ms;
   animation-name: glissement;
   transition: all 450ms ease-out;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 170px;
   margin-bottom: 10px;
 }
 .card-menu .plat h2 {
@@ -969,14 +1121,148 @@ header i {
 .card-menu .plat .platOne .fa-circle-check {
   visibility: hidden;
 }
+@media screen and (max-width: 992px) {
+  .card-menu .plat {
+    animation-duration: 3s;
+    animation-delay: 3000ms;
+    animation-name: glissement;
+    transition: all 450ms ease-out;
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    margin-bottom: 10px;
+  }
+  .card-menu .plat h2 {
+    color: #7E7E7E;
+    font-size: 15px;
+    border-bottom: 3px solid;
+    border-bottom-color: #99E2D0;
+    padding-bottom: 10px;
+    width: 40px;
+  }
+  .card-menu .plat a:hover .background-green {
+    display: flex;
+    flex-direction: column;
+    background-color: #99E2D0;
+    width: 16%;
+    margin-top: -26px;
+    margin-right: -10px;
+    height: 67px;
+    border-radius: 0 10px 10px 0;
+  }
+  .card-menu .plat a:hover .background-green .fa-circle-check {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+  }
+  .card-menu .plat .platOne {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 15px;
+  }
+  .card-menu .plat .platOne h3 {
+    margin-top: 0px;
+  }
+  .card-menu .plat .platOne .tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -25px;
+  }
+  .card-menu .plat .platOne .tarif p {
+    color: #7E7E7E;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .card-menu .plat .platOne .tarif .prix p {
+    color: #000000;
+    margin-left: 160px;
+    margin-right: 5px;
+  }
+  .card-menu .plat .platOne .fa-circle-check {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-menu .plat {
+    width: 100%;
+    animation-duration: 3s;
+    animation-delay: 3000ms;
+    animation-name: glissement;
+    transition: all 450ms ease-out;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .card-menu .plat h2 {
+    color: #7E7E7E;
+    font-size: 15px;
+    border-bottom: 3px solid;
+    border-bottom-color: #99E2D0;
+    padding-bottom: 10px;
+    width: 40px;
+  }
+  .card-menu .plat a:hover .background-green {
+    display: flex;
+    flex-direction: column;
+    background-color: #99E2D0;
+    width: 16%;
+    margin-top: -26px;
+    margin-right: -10px;
+    height: 67px;
+    border-radius: 0 10px 10px 0;
+  }
+  .card-menu .plat a:hover .background-green .fa-circle-check {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+  }
+  .card-menu .plat .platOne {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 15px;
+  }
+  .card-menu .plat .platOne h3 {
+    margin-top: 0px;
+  }
+  .card-menu .plat .platOne .tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -25px;
+  }
+  .card-menu .plat .platOne .tarif p {
+    color: #7E7E7E;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .card-menu .plat .platOne .tarif .prix p {
+    color: #000000;
+    margin-left: 160px;
+    margin-right: 5px;
+  }
+  .card-menu .plat .platOne .fa-circle-check {
+    visibility: hidden;
+  }
+}
 .card-menu .dessert {
+  width: 70%;
   animation-duration: 3s;
   animation-delay: 6000ms;
   animation-name: glissement;
   transition: all 450ms ease-out;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 170px;
   margin-bottom: 10px;
 }
 .card-menu .dessert h2 {
@@ -1032,6 +1318,139 @@ header i {
 }
 .card-menu .dessert .dessertOne .fa-circle-check {
   visibility: hidden;
+}
+@media screen and (max-width: 992px) {
+  .card-menu .dessert {
+    animation-duration: 3s;
+    animation-delay: 6000ms;
+    animation-name: glissement;
+    transition: all 450ms ease-out;
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    margin-bottom: 10px;
+  }
+  .card-menu .dessert h2 {
+    color: #7E7E7E;
+    font-size: 15px;
+    border-bottom: 3px solid;
+    border-bottom-color: #99E2D0;
+    padding-bottom: 10px;
+    width: 40px;
+  }
+  .card-menu .dessert a:hover .background-green {
+    display: flex;
+    flex-direction: column;
+    background-color: #99E2D0;
+    width: 16%;
+    margin-top: -26px;
+    margin-right: -10px;
+    height: 67px;
+    border-radius: 0 10px 10px 0;
+  }
+  .card-menu .dessert a:hover .background-green .fa-circle-check {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+  }
+  .card-menu .dessert .dessertOne {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 15px;
+  }
+  .card-menu .dessert .dessertOne h3 {
+    margin-top: 0px;
+  }
+  .card-menu .dessert .dessertOne .tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -25px;
+  }
+  .card-menu .dessert .dessertOne .tarif p {
+    color: #7E7E7E;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .card-menu .dessert .dessertOne .tarif .prix p {
+    color: #000000;
+    margin-left: 160px;
+    margin-right: 5px;
+  }
+  .card-menu .dessert .dessertOne .fa-circle-check {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-menu .dessert {
+    width: 100%;
+    animation-duration: 3s;
+    animation-delay: 6000ms;
+    animation-name: glissement;
+    transition: all 450ms ease-out;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .card-menu .dessert h2 {
+    color: #7E7E7E;
+    font-size: 15px;
+    border-bottom: 3px solid;
+    border-bottom-color: #99E2D0;
+    padding-bottom: 10px;
+    width: 40px;
+  }
+  .card-menu .dessert a:hover .background-green {
+    display: flex;
+    flex-direction: column;
+    background-color: #99E2D0;
+    width: 16%;
+    margin-top: -26px;
+    margin-right: -10px;
+    height: 67px;
+    border-radius: 0 10px 10px 0;
+  }
+  .card-menu .dessert a:hover .background-green .fa-circle-check {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+  }
+  .card-menu .dessert .dessertOne {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 15px;
+  }
+  .card-menu .dessert .dessertOne h3 {
+    margin-top: 0px;
+  }
+  .card-menu .dessert .dessertOne .tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -25px;
+  }
+  .card-menu .dessert .dessertOne .tarif p {
+    color: #7E7E7E;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .card-menu .dessert .dessertOne .tarif .prix p {
+    color: #000000;
+    margin-left: 160px;
+    margin-right: 5px;
+  }
+  .card-menu .dessert .dessertOne .fa-circle-check {
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 992px) {
