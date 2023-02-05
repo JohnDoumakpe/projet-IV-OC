@@ -867,6 +867,7 @@ header i {
   margin-right: -10px;
   height: 67px;
   border-radius: 0 10px 10px 0;
+  transition: color 450ms ease-out;
 }
 .card-menu .entree a:hover .background-green .fa-circle-check {
   display: flex;
