@@ -384,6 +384,7 @@
         justify-content : center;
         .cardOne{
             @include section-display1;
+            position : relative;
             margin-top: 20px;
             margin-left : 40px;
             background-color:$color-white;
@@ -433,6 +434,7 @@
                     }
                 }
             .alert{
+                position : absolute;
                 @include section-display1;
                 width:120px;
                 height:40px;
@@ -465,6 +467,7 @@
             @include section-display2;
             justify-content : center;
             .cardOne{
+                position : relative;
                 @include section-display1;
                 margin-top: 20px;
                 margin-left : 10px;
@@ -496,26 +499,27 @@
                     object-fit: cover;
                 }
             
-                .info-restaurant{
+            .info-restaurant{
                 margin-left: -10px;
                 @include section-display2;
                 justify-content:space-around;
                 font-size : small;
-                    .fa-heart:before {
-                        font-size : 35px;
-                        position: absolute;
-                        margin-left: -25px;
+                .fa-heart:before {
+                    font-size : 35px;
+                    position: absolute;
+                    margin-left: -25px;
                         
-                    }
-                    p{
-                        margin-top: 5px;
-                    }
-
-                    h3{
-                        margin-bottom: 0px;
-                    }
                 }
+                p{
+                    margin-top: 5px;
+                }
+
+                h3{
+                    margin-bottom: 0px;
+                }
+            }
             .alert{
+                    position : absolute;
                     @include section-display1;
                     width:120px;
                     height:40px;
@@ -554,6 +558,7 @@
             @include section-display1;
             justify-content : center;
             .cardOne{
+                position: relative;
                 @include section-display1;
                 margin-top: 20px;
                 margin-left : 18px;
@@ -605,12 +610,13 @@
                     }
                 }
             .alert{
+                    position : absolute;
                     @include section-display1;
                     width:120px;
                     height:40px;
                     background-color: $color-tertiary;
                     position:relative;
-                    left:190px;
+                    left:160px;
                     bottom: 235px;
                     p{
                         text-align:center;

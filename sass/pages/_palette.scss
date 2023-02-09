@@ -26,7 +26,7 @@ header{
     header{
         i{
             position: absolute;
-            margin-left: -85px;
+            margin-left: -55px;
             margin-top: 15px;
             color: $color-grey2;
             font-size: larger;
@@ -63,9 +63,19 @@ header{
         h1{
             font-family:Shrikhand;
         }
-        i{
-            font-size: 35px;
-            margin-left : 20px;
+        .heart{
+            &:hover {
+                .fa-heart:before {
+                    font-weight:bolder;
+                    color:$color-primary;
+                    cursor: pointer;
+                    transition: color 450ms ease-out;
+                }
+            } 
+            i{
+                font-size: 35px;
+                margin-left : 20px;
+            }
         }
     }
 
@@ -142,6 +152,7 @@ header{
                     color: $color-grey-icone;
                     margin-top: 10px;
                     font-size: 14px;
+                    width : 80%;
                 } 
                 .prix{
                     p{
@@ -293,12 +304,14 @@ header{
                         color: $color-grey-icone;
                         margin-top: 10px;
                         font-size: 14px;
+                        width : 30%;
                     } 
                     .prix{
                         p{
                             color:$color-black;
-                            margin-left: 160px;
+                            margin-left: 180px;
                             margin-right:5px;
+                          
                         }
                                 
                     }  
@@ -369,6 +382,7 @@ header{
                     color: $color-grey-icone;
                     margin-top: 10px;
                     font-size: 14px;
+                    width : 80%;
                     
                 } 
                 .prix{
@@ -517,12 +531,13 @@ header{
                         color: $color-grey-icone;
                         margin-top: 10px;
                         font-size: 14px;
+                        width : 30%;
                         
                     } 
                     .prix{
                         p{
                             color:$color-black;
-                            margin-left: 160px;
+                            margin-left: 180px;
                             margin-right: 5px;
                         }
                             
@@ -593,6 +608,7 @@ header{
                     color: $color-grey-icone;
                     margin-top: 10px;
                     font-size: 14px;
+                    width : 80%;
                 } 
                 .prix{
                     p{
@@ -741,11 +757,12 @@ header{
                         color: $color-grey-icone;
                         margin-top: 10px;
                         font-size: 14px;
+                        width : 30%;
                     } 
                     .prix{
                         p{
                             color:$color-black;
-                            margin-left: 160px;
+                            margin-left: 180px;
                             margin-right: 5px;
                         }
                                 

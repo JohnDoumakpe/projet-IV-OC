@@ -1,14 +1,20 @@
-header, main, footer, .container {
+header,main,footer,.container{
   width: 100%;
   max-width: 768px;
 }
 
-body {
+body{
   font-family: "roboto";
 }
 
-h1, h2, h3, h4, h5 {
+h1,h2,h3,h4,h5{
   font-family: "roboto";
+}
+
+.txt-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .btn {
@@ -474,6 +480,7 @@ header, main, footer, .container {
 .sectionThree .cards .cardOne {
   display: flex;
   flex-direction: column;
+  position: relative;
   margin-top: 20px;
   margin-left: 40px;
   background-color: #FFFFFF;
@@ -516,6 +523,7 @@ header, main, footer, .container {
   margin-bottom: 0px;
 }
 .sectionThree .cards .cardOne .alert {
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 120px;
@@ -549,6 +557,7 @@ header, main, footer, .container {
     justify-content: center;
   }
   .sectionThree .cards .cardOne {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -594,6 +603,7 @@ header, main, footer, .container {
     margin-bottom: 0px;
   }
   .sectionThree .cards .cardOne .alert {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 120px;
@@ -630,6 +640,7 @@ header, main, footer, .container {
     justify-content: center;
   }
   .sectionThree .cards .cardOne {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -675,13 +686,14 @@ header, main, footer, .container {
     margin-bottom: 0px;
   }
   .sectionThree .cards .cardOne .alert {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 120px;
     height: 40px;
     background-color: #99E2D0;
     position: relative;
-    left: 190px;
+    left: 160px;
     bottom: 235px;
   }
   .sectionThree .cards .cardOne .alert p {
@@ -802,7 +814,7 @@ header i {
 @media screen and (max-width: 768px) {
   header i {
     position: absolute;
-    margin-left: -85px;
+    margin-left: -55px;
     margin-top: 15px;
     color: #353535;
     font-size: larger;
@@ -837,7 +849,13 @@ header i {
 .card-menu .entete h1 {
   font-family: Shrikhand;
 }
-.card-menu .entete i {
+.card-menu .entete .heart:hover .fa-heart:before {
+  font-weight: bolder;
+  color: #9356DC;
+  cursor: pointer;
+  transition: color 450ms ease-out;
+}
+.card-menu .entete .heart i {
   font-size: 35px;
   margin-left: 20px;
 }
@@ -912,6 +930,7 @@ header i {
   color: #7E7E7E;
   margin-top: 10px;
   font-size: 14px;
+  width: 80%;
 }
 .card-menu .entree .entreeOne .tarif .prix p {
   color: #000000;
@@ -1046,10 +1065,11 @@ header i {
     color: #7E7E7E;
     margin-top: 10px;
     font-size: 14px;
+    width: 30%;
   }
   .card-menu .entree .entreeOne .tarif .prix p {
     color: #000000;
-    margin-left: 160px;
+    margin-left: 180px;
     margin-right: 5px;
   }
   .card-menu .entree .entreeOne .fa-circle-check {
@@ -1112,6 +1132,7 @@ header i {
   color: #7E7E7E;
   margin-top: 10px;
   font-size: 14px;
+  width: 80%;
 }
 .card-menu .plat .platOne .tarif .prix p {
   color: #000000;
@@ -1244,10 +1265,11 @@ header i {
     color: #7E7E7E;
     margin-top: 10px;
     font-size: 14px;
+    width: 30%;
   }
   .card-menu .plat .platOne .tarif .prix p {
     color: #000000;
-    margin-left: 160px;
+    margin-left: 180px;
     margin-right: 5px;
   }
   .card-menu .plat .platOne .fa-circle-check {
@@ -1310,6 +1332,7 @@ header i {
   color: #7E7E7E;
   margin-top: 10px;
   font-size: 14px;
+  width: 80%;
 }
 .card-menu .dessert .dessertOne .tarif .prix p {
   color: #000000;
@@ -1442,10 +1465,11 @@ header i {
     color: #7E7E7E;
     margin-top: 10px;
     font-size: 14px;
+    width: 30%;
   }
   .card-menu .dessert .dessertOne .tarif .prix p {
     color: #000000;
-    margin-left: 160px;
+    margin-left: 180px;
     margin-right: 5px;
   }
   .card-menu .dessert .dessertOne .fa-circle-check {
@@ -1490,7 +1514,7 @@ header i {
   transition: all 450ms ease-out;
 }
 .button .btn:hover {
-  background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   opacity: 0.7;
 }
